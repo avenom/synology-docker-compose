@@ -5,13 +5,13 @@
 Здесь собраны композеры отобранных проектов с непересекающимися друг с другом локальными портами. Если у вас эти порты будут заняты, то можете поменять на свободные. Например в **8080:80** локальный порт - **8080**.
 
 * [Glances](#glances)
-* [Homer + Homer Theme v2](#)
-* [OpenSpeedTest](#)
-* [PlexTraktSync](#)
-* [Podfetch + PostgreSQL](#)
-* [RSS-Bridge](#)
-* [SMTP To Telegram](#)
-* [Tautulli](#)
+* [Homer + Homer Theme v2](#homer)
+* [OpenSpeedTest](#openspeedtest)
+* [PlexTraktSync](#plextraktsync)
+* [Podfetch + PostgreSQL](#podfetch)
+* [RSS-Bridge](#rss-bridge)
+* [SMTP To Telegram](#smtp_to_telegram)
+* [Tautulli](#tautulli)
 
 
 ## Glances <a name="glances"></a>
@@ -47,7 +47,7 @@ services:
 http://synologyip:61208
 ```
 
-## Homer + Homer Theme v2
+## Homer + Homer Theme v2 <a name="homer"></a>
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -81,7 +81,7 @@ http://synologyip:8080
 
 Ссылки добавляются вручную путем редактирования файла /docker/homer/assets/config.yml
 
-## OpenSpeedTest
+## OpenSpeedTest <a name="openspeedtest"></a>
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -108,7 +108,7 @@ services:
 http://synologyip:3000
 ```
 
-## PlexTraktSync
+## PlexTraktSync <a name="plextraktsync"></a>
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -147,7 +147,7 @@ services:
 docker container start plextraktsync
 ```
 
-## Podfetch + PostgreSQL
+## Podfetch + PostgreSQL <a name="podfetch"></a>
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -198,7 +198,7 @@ services:
 http://synologyip:8000
 ```
 
-## RSS-Bridge
+## RSS-Bridge <a name="rss-bridge"></a>
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -227,7 +227,7 @@ services:
 http://synologyip:3001
 ```
 
-## SMTP To Telegram
+## SMTP To Telegram <a name="smtp_to_telegram"></a>
 
 SMTP To Telegram можно настроить и использовать для отправки уведомлений из Synology DSM и Download Station в вашего телеграм-бота. Подробная инструкция будет позже.
 
@@ -256,7 +256,7 @@ services:
     restart: always
 ```
 
-## Tautulli
+## Tautulli <a name="tautulli"></a>
 
 1. Создайте в File Station следующую структуру папок:
 
