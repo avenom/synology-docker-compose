@@ -33,8 +33,8 @@ services:
 1. Создайте в File Station следующую структуру папок:
 
 ```
-/docker/homer/assets
-/docker/homer/www/assets
+/docker/homer/assets/
+/docker/homer/www/assets/
 ```
 
 2. Создайте в Container Manager новый проект с названием homer, выберите путь /docker/homer/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
@@ -57,12 +57,10 @@ services:
 1. Создайте в File Station следующую структуру папок:
 
 ```
-/docker/homer/assets
-/docker/homer/www/assets
+/docker/openspeedtest/
 ```
 
-2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
-
+2. Создайте в Container Manager новый проект с названием openspeedtest, выберите путь /docker/openspeedtest/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
 version: '3.3'
@@ -80,11 +78,10 @@ services:
 1. Создайте в File Station следующую структуру папок:
 
 ```
-/docker/homer/assets
-/docker/homer/www/assets
+/docker/plextraktsync/config/
 ```
 
-2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
+2. Создайте в Container Manager новый проект с названием plextraktsync, выберите путь /docker/plextraktsync/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
 version: '2'
@@ -97,16 +94,15 @@ services:
       - ./config:/app/config
 ```
 
-## Podfetch
+## Podfetch + PostgreSQL
 
 1. Создайте в File Station следующую структуру папок:
 
 ```
-/docker/homer/assets
-/docker/homer/www/assets
+/docker/podfetch/db/
 ```
 
-2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
+2. Создайте в Container Manager новый проект с названием podfetch, выберите путь /docker/podfetch/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
 version: '3'
@@ -148,11 +144,10 @@ services:
 1. Создайте в File Station следующую структуру папок:
 
 ```
-/docker/homer/assets
-/docker/homer/www/assets
+/docker/rss-bridge/config/
 ```
 
-2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
+2. Создайте в Container Manager новый проект с названием rss-bridge, выберите путь /docker/rss-bridge/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
 version: '2'
@@ -172,11 +167,10 @@ services:
 1. Создайте в File Station следующую структуру папок:
 
 ```
-/docker/homer/assets
-/docker/homer/www/assets
+/docker/smtp_to_telegram/
 ```
 
-2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
+2. Создайте в Container Manager новый проект с названием smtp_to_telegram, выберите папку /docker/smtp_to_telegram/, вставьте следующий код, замените ВАШ ТОКЕН БОТА и ВАШ CHAT ID БОТА на ваши данные:
 
 ```
 version: '2'
@@ -200,11 +194,10 @@ services:
 1. Создайте в File Station следующую структуру папок:
 
 ```
-/docker/homer/assets
-/docker/homer/www/assets
+/docker/tautulli/config/
 ```
 
-2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
+2. Создайте в Container Manager новый проект с названием tautulli, выберите путь /docker/tautulli/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
 version: '3'
