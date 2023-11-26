@@ -34,16 +34,18 @@ services:
 http://synologyip:61208
 ```
 
-## Homer + Homer Theme
+## Homer + Homer Theme v2
 
 1. Создайте в File Station следующую структуру папок:
 
 ```
 /docker/homer/assets/
-/docker/homer/www/assets/
 ```
 
-2. Создайте в Container Manager новый проект с названием homer, выберите путь /docker/homer/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
+2. Скачайте zip-архив [Homer Theme v2](https://github.com/walkxcode/homer-theme/releases), скопируйте из архива содержимое папки assets в /docker/homer/assets.
+
+
+3. Создайте в Container Manager новый проект с названием homer, выберите путь /docker/homer/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
 version: '2'
@@ -58,11 +60,13 @@ services:
     restart: always
 ```
 
-3. Homer будет доступен по адресу:
+4. Homer будет доступен по адресу:
 
 ```
 http://synologyip:8080
 ```
+
+Ссылки добавляются вручную путем редактирования файла /docker/homer/assets/config.yml
 
 ## OpenSpeedTest
 
