@@ -216,6 +216,8 @@ http://synologyip:3001
 
 ## SMTP To Telegram
 
+SMTP To Telegram можно настроить и использовать для отправки уведомлений из Synology DSM и Download Station в вашего телеграм-бота. Подробная инструкция будет позже.
+
 1. Создайте в File Station следующую структуру папок:
 
 ```
