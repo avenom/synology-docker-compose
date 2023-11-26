@@ -5,6 +5,7 @@
 Здесь собраны композеры отобранных проектов с непересекающимися друг с другом локальными портами. Если у вас эти порты будут заняты, то можете поменять на свободные. Например в **8080:80** локальный порт - **8080**.
 
 * [Glances](#glances)
+* [Home Assistant Container](#home-assistant-container)
 * [Homer + Homer Theme v2](#homer)
 * [Miniflux](#miniflux)
 * [OpenSpeedTest](#openspeedtest)
@@ -13,7 +14,7 @@
 * [RSS-Bridge](#rss-bridge)
 * [SMTP To Telegram](#smtp_to_telegram)
 * [Tautulli](#tautulli)
-
+* [Wallabag](#wallabag)
 
 ## Glances <a name="glances"></a>
 
