@@ -4,7 +4,17 @@
 
 Здесь собраны композеры отобранных проектов с непересекающимися друг с другом локальными портами. Если у вас эти порты будут заняты, то можете поменять на свободные. Например в **8080:80** локальный порт - **8080**.
 
-## Glances
+* [Glances](#glances)
+* [Homer + Homer Theme v2](#)
+* [OpenSpeedTest](#)
+* [PlexTraktSync](#)
+* [Podfetch + PostgreSQL](#)
+* [RSS-Bridge](#)
+* [SMTP To Telegram](#)
+* [Tautulli](#)
+
+
+## Glances <a name="glances"></a>
 
 1. Создайте в File Station следующую структуру папок:
 
