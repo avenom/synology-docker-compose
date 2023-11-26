@@ -28,6 +28,12 @@ services:
     restart: always
 ```
 
+3. Glances будет доступен по адресу:
+
+```
+http://synologyip:61208
+```
+
 ## Homer + Homer Theme
 
 1. Создайте в File Station следующую структуру папок:
@@ -52,6 +58,12 @@ services:
     restart: always
 ```
 
+3. Homer будет доступен по адресу:
+
+```
+http://synologyip:8080
+```
+
 ## OpenSpeedTest
 
 1. Создайте в File Station следующую структуру папок:
@@ -71,6 +83,12 @@ services:
     ports:
       - 3000:3000
     restart: always
+```
+
+3. OpenSpeedTest будет доступен по адресу:
+
+```
+http://synologyip:3000
 ```
 
 ## PlexTraktSync
@@ -139,6 +157,12 @@ services:
     restart: always
 ```
 
+3. Podfetch будет доступен по адресу:
+
+```
+http://synologyip:8000
+```
+
 ## RSS-Bridge
 
 1. Создайте в File Station следующую структуру папок:
@@ -160,6 +184,12 @@ services:
     ports:
       - 3001:80
     restart: always
+```
+
+3. RSS-Bridge будет доступен по адресу:
+
+```
+http://synologyip:3001
 ```
 
 ## SMTP To Telegram
@@ -214,4 +244,10 @@ services:
     ports:
       - 8181:8181
     restart: always
+```
+
+3. Tautulli будет доступен по адресу:
+
+```
+http://synologyip:8181
 ```
