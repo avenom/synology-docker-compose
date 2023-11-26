@@ -6,6 +6,7 @@
 
 * [Glances](#glances)
 * [Homer + Homer Theme v2](#homer)
+* [Miniflux](#miniflux)
 * [OpenSpeedTest](#openspeedtest)
 * [PlexTraktSync](#plextraktsync)
 * [Podfetch + PostgreSQL](#podfetch)
