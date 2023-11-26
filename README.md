@@ -3,6 +3,14 @@ Synology Docker Compose
 
 ## Glances
 
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/glances/
+```
+
+2. Создайте в Container Manager новый проект с названием glances, выберите путь /docker/glances/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
+
 ```
 version: '2'
 services:
@@ -22,6 +30,15 @@ services:
 
 ## Homer + Homer Theme
 
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/homer/assets
+/docker/homer/www/assets
+```
+
+2. Создайте в Container Manager новый проект с названием homer, выберите путь /docker/homer/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
+
 ```
 version: '2'
 services:
@@ -37,6 +54,16 @@ services:
 
 ## OpenSpeedTest
 
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/homer/assets
+/docker/homer/www/assets
+```
+
+2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
+
+
 ```
 version: '3.3'
 services:
@@ -50,6 +77,15 @@ services:
 
 ## PlexTraktSync
 
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/homer/assets
+/docker/homer/www/assets
+```
+
+2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
+
 ```
 version: '2'
 services:
@@ -62,6 +98,15 @@ services:
 ```
 
 ## Podfetch
+
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/homer/assets
+/docker/homer/www/assets
+```
+
+2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
 
 ```
 version: '3'
@@ -100,6 +145,15 @@ services:
 
 ## RSS-Bridge
 
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/homer/assets
+/docker/homer/www/assets
+```
+
+2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
+
 ```
 version: '2'
 services:
@@ -114,6 +168,15 @@ services:
 ```
 
 ## SMTP To Telegram
+
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/homer/assets
+/docker/homer/www/assets
+```
+
+2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
 
 ```
 version: '2'
@@ -133,6 +196,15 @@ services:
 ```
 
 ## Tautulli
+
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/homer/assets
+/docker/homer/www/assets
+```
+
+2. Создайте в Container Manager новый проект с названием homer, выберите папку /docker/homer/, вставьте следующий код:
 
 ```
 version: '3'
