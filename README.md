@@ -1,4 +1,4 @@
-# synology-docker-compose
+# Docker Compose для Synology DSM 7.2
 Synology Docker Compose
 
 ## Glances
