@@ -190,7 +190,7 @@ http://synologyip:8000
 1. Создайте в File Station следующую структуру папок:
 
 ```
-/docker/rss-bridge/config/
+/docker/rss-bridge/
 ```
 
 2. Создайте в Container Manager новый проект с названием rss-bridge, выберите путь /docker/rss-bridge/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
