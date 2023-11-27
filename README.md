@@ -13,6 +13,7 @@
 * [Podfetch + PostgreSQL](#podfetch)
 * [RSS-Bridge](#rss-bridge)
 * [SMTP To Telegram](#smtp_to_telegram)
+* [Swing Music](#swingmusic)
 * [Tautulli](#tautulli)
 * [Uptime Kuma](#uptime-kuma)
 * [Wallabag](#wallabag)
@@ -258,6 +259,38 @@ services:
       - 2525:2525
     restart: always
 ```
+
+## Swing Music <a name="swingtime"></a>
+
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/swingmusic/config/
+/docker/swingmusic/music/ - скопируйте в эту папку вашу музыку
+```
+
+2. Создайте в Container Manager новый проект с названием swingmusic, выберите путь /docker/swingmusic/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
+
+```
+version: '2'
+services:
+  swingmusic:
+    image: bitnik212/swingmusic:latest
+    container_name: swingmusic
+    volumes:
+      - ./music:/music
+      - ./config:/config
+    ports:
+      - "1970:1970"
+    restart: always
+```
+
+3. Swing Music будет доступен по адресу:
+
+```
+http://synologyip:1970
+```
+
 
 ## Tautulli <a name="tautulli"></a>
 
