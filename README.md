@@ -291,6 +291,7 @@ services:
 http://synologyip:1970
 ```
 
+4. Нажмите Customize root directories, выберите /music, нажмите Select here.
 
 ## Tautulli <a name="tautulli"></a>
 
