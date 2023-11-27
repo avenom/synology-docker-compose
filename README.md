@@ -390,7 +390,7 @@ http://synologyip:3002
 ```
 version: '2'
 services:
-  tautulli:
+  vaultwarden:
     image: vaultwarden/server:latest
     container_name: vaultwarden
     volumes:
