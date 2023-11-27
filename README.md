@@ -385,7 +385,7 @@ http://synologyip:3002
 /docker/vaultwarden/
 ```
 
-2. Создайте в Container Manager новый проект с названием vaultwarden, выберите путь /docker/vaultwarden/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
+5. Создайте в Container Manager новый проект с названием vaultwarden, выберите путь /docker/vaultwarden/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
 version: '2'
@@ -401,7 +401,7 @@ services:
     restart: always
 ```
 
-3. Vaultwarden будет доступен по адресу:
+6. Vaultwarden будет доступен по адресу:
 
 ```
 https://vaultwarden.local
