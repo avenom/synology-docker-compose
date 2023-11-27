@@ -354,3 +354,49 @@ services:
 ```
 http://synologyip:3002
 ```
+
+## Vaultwarden <a name="uptime-kuma"></a>
+
+1. Vaultwarden работает по протоколу HTTPS, поэтому в Synology DSM нужно настроить обратный прокси. Откройте Панель управления, перейдите в Портал для входа, откройты вкладку Дополнительно, нажмите Обратный прокси, создайте обратный прокси со следующими данными:
+
+```
+Имя обратного прокси: vaultwarden
+
+Источник
+Протокол: HTTPS
+Имя хоста: vaultwarden
+Порт: 443
+Включить HSTS: да
+
+Место назначения:
+Протокол: HTTP
+Имя хоста: IP-адрес вашего Synology
+Порт: 5151
+```
+
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/uptime-kuma/data/
+```
+
+2. Создайте в Container Manager новый проект с названием uptime-kuma, выберите путь /docker/uptime-kuma/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
+
+```
+version: '3.3'
+services:
+  uptime-kuma:
+    image: elestio/uptime-kuma:latest
+    container_name: uptime-kuma
+    volumes:
+    - ./data:/app/data
+    ports:
+    - 3002:3001
+    restart: always
+```
+
+3. Uptime Kuma будет доступен по адресу:
+
+```
+https://vaultwarden.local
+```
