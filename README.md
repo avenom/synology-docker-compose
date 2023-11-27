@@ -16,7 +16,7 @@
 * [Tautulli](#tautulli)
 * [Wallabag](#wallabag)
 
-## [Glances](https://github.com/nicolargo/glances) <a name="glances"></a>
+## Glances <a name="glances"></a>
 
 1. Создайте в File Station следующую структуру папок:
 
