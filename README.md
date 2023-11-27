@@ -260,7 +260,7 @@ services:
     restart: always
 ```
 
-## Swing Music <a name="swingtime"></a>
+## Swing Music <a name="swingmusic"></a>
 
 1. Создайте в File Station следующую структуру папок:
 
