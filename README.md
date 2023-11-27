@@ -388,15 +388,16 @@ http://synologyip:3002
 2. Создайте в Container Manager новый проект с названием vaultwarden, выберите путь /docker/vaultwarden/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
-version: '3.3'
+version: '2'
 services:
-  uptime-kuma:
-    image: elestio/uptime-kuma:latest
-    container_name: uptime-kuma
+  tautulli:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
     volumes:
-    - ./data:/app/data
+      - /volume1/docker/vaultwarden:/data
     ports:
-    - 3002:3001
+      - 3012:3012
+      - 5151:80
     restart: always
 ```
 
