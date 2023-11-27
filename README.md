@@ -16,6 +16,7 @@
 * [Swing Music](#swingmusic)
 * [Tautulli](#tautulli)
 * [Uptime Kuma](#uptime-kuma)
+* [Vaultwarden](#vaultwarden)
 * [Wallabag](#wallabag)
 
 ## Glances <a name="glances"></a>
@@ -355,7 +356,7 @@ services:
 http://synologyip:3002
 ```
 
-## Vaultwarden <a name="uptime-kuma"></a>
+## Vaultwarden <a name="vaultwarden"></a>
 
 1. Vaultwarden работает по протоколу HTTPS, поэтому в Synology DSM нужно настроить обратный прокси. Откройте Панель управления, перейдите в Портал для входа, откройты вкладку Дополнительно, нажмите Обратный прокси, создайте обратный прокси со следующими данными:
 
