@@ -327,7 +327,7 @@ services:
 
 Красиво оформленный, самостоятельно размещаемый сервер потоковой передачи музыки. Как Spotify, только с вашей музыкой.
 
-<img src="">
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/swingmusic.png">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -341,7 +341,7 @@ services:
 ```
 services:
   swingmusic:
-    image: shlomip/swingmusic:latest
+    image: ghcr.io/swing-opensource/swingmusic:latest
     container_name: swingmusic
     volumes:
       - ./config:/config
@@ -357,7 +357,7 @@ services:
 http://synologyip:1970
 ```
 
-4. Нажмите Customize root directories, выберите /music, нажмите Select here.
+4. Нажмите Specific directories, выберите /music, нажмите Select here.
 
 ## Tautulli <a name="tautulli"></a>
 
