@@ -240,10 +240,10 @@ services:
     image: postgres:latest
     container_name: podfetch-db
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-postgres}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: changeme
       PGDATA: /data/postgres
-      POSTGRES_DB: ${POSTGRES_DB:-podfetch}
+      POSTGRES_DB: podfetch
     volumes:
       - ./db:/data/postgres
     restart: always
