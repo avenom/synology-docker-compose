@@ -154,7 +154,6 @@ password
 2. Создайте в Container Manager новый проект с названием openspeedtest, выберите путь /docker/openspeedtest/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
-version: '3.3'
 services:
   openspeedtest:
     image: openspeedtest/latest:latest
