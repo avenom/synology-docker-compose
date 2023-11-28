@@ -30,7 +30,6 @@
 2. Создайте в Container Manager новый проект с названием glances, выберите путь /docker/glances/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
-version: '2'
 services:
   glances:
     image: nicolargo/glances:latest
