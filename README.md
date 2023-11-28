@@ -496,7 +496,7 @@ services:
       - SYMFONY__ENV__DATABASE_PASSWORD=wallapass
       - SYMFONY__ENV__DATABASE_CHARSET=utf8mb4
       - SYMFONY__ENV__DATABASE_TABLE_PREFIX="wallabag_"
-      - SYMFONY__ENV__DOMAIN_NAME=http://192.168.1.120:8082
+      - SYMFONY__ENV__DOMAIN_NAME=http://synologyip:8082
       - SYMFONY__ENV__SERVER_NAME="Wallabag"
       - SYMFONY__ENV__FOSUSER_CONFIRMATION=false
     ports:
@@ -535,8 +535,12 @@ services:
     restart: always
 ```
 
-3. Wallabag будет доступен по адресу:
+3. После запуска проекта, необходимо подождать 3-5 минут, пока создается база данных, ориентируйтесь на звук работы жестких дисков или установите [Glances](https://github.com/avenom/synology-docker-compose#glances) для мониторинга работы контейнеров. После создания базы данных, статус контейнеров будет зеленым, но статус контейнера wallabag-db возможно будет оранжевым, не обращайте на это внимание, все должно работать без проблем.
+
+4. Зайдите в Wallabag по адресу и зарегистрируйте нового пользователя:
 
 ```
 http://synologyip:8082
 ```
+
+5. Для сохранения статей установите в браузере расширение [Wallabagger](https://github.com/wallabag/wallabagger).
