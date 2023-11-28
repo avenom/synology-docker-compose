@@ -212,7 +212,9 @@ docker container start plextraktsync
 1. Создайте в File Station следующую структуру папок:
 
 ```
+/docker/podfetch/podcasts/
 /docker/podfetch/db/
+
 ```
 
 2. Создайте в Container Manager новый проект с названием podfetch, выберите путь /docker/podfetch/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
@@ -222,32 +224,29 @@ services:
   podfetch:
     image: samuel19982/podfetch:latest
     container_name: podfetch
-    user: 1026:100
+    user: ${UID:-1000}:${GID:-1000}
     ports:
       - "8000:8000"
     depends_on:
       - postgres
     volumes:
-      - /volume1/docker/podfetch:/app/podcasts:rw
+      - ./podcasts:/app/podcasts
     environment:
       - POLLING_INTERVAL=300
-      - SERVER_URL=http://localhost:80
+      - SERVER_URL=http://192.168.1.120:8000
       - DATABASE_URL=postgresql://postgres:changeme@postgres/podfetch
     restart: always
 
   postgres:
     image: postgres:latest
     container_name: podfetch-db
-    security_opt:
-      - no-new-privileges:true
-    healthcheck:
-      test: ["CMD", "pg_isready", "-q", "-d", "podfetch", "-U", "postgres"]
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: changeme
-      POSTGRES_DB: podfetch
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      PGDATA: /data/postgres
+      POSTGRES_DB: ${POSTGRES_DB:-podfetch}
     volumes:
-      - /volume1/docker/podfetch/db:/var/lib/postgresql/data:rw
+      - ./db:/data/postgres
     restart: always
 ```
 
