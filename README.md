@@ -302,7 +302,6 @@ SMTP To Telegram можно настроить и использовать дл�
 2. Создайте в Container Manager новый проект с названием smtp_to_telegram, выберите папку /docker/smtp_to_telegram/, вставьте следующий код, замените ВАШ ТОКЕН БОТА и ВАШ CHAT ID БОТА на ваши данные:
 
 ```
-version: '2'
 services:
   smtp_to_telegram:
     image: kostyaesmukov/smtp_to_telegram:latest
