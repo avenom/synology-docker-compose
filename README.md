@@ -55,6 +55,8 @@ http://synologyip:61208
 
 ## Homer + Homer Theme v2 <a name="homer"></a>
 
+Минималистичная стартовая страница для вашего сервера, чтобы держать ссылки на ваши сервисы под рукой.
+
 1. Создайте в File Station следующую структуру папок:
 
 ```
@@ -87,6 +89,8 @@ http://synologyip:8080
 Ссылки добавляются вручную путем редактирования файла /docker/homer/assets/config.yml
 
 ## Miniflux + PostgreSQL <a name="miniflux"></a>
+
+Mинималистичный RSS-клиент с интеграциями с разными сервисами.
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -147,6 +151,8 @@ password
 
 ## OpenSpeedTest <a name="openspeedtest"></a>
 
+Инструмент для тестирования скорости интернета.
+
 1. Создайте в File Station следующую структуру папок:
 
 ```
@@ -172,6 +178,8 @@ http://synologyip:3000
 ```
 
 ## PlexTraktSync <a name="plextraktsync"></a>
+
+Двухсторонняя синхронизация между trakt.tv и Plex Media Server. Требует наличия учетной записи trakt.tv, но не требует наличия подписок Plex Pass и Trakt VIP.
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -210,6 +218,8 @@ docker container start plextraktsync
 ```
 
 ## Podgrab <a name="podgrab"></a>
+
+Менеджер/загрузчик/архиватор подкастов с интегрированным плеером, позволяющий загружать эпизоды подкастов, как только они выходят в эфир.
 
 1. Создайте в File Station следующую структуру папок:
 
