@@ -223,7 +223,7 @@ services:
   podfetch:
     image: samuel19982/podfetch:latest
     container_name: podfetch
-    user: ${UID:-1000}:${GID:-1000}
+    user: 1026:100
     ports:
       - "8000:8000"
     depends_on:
