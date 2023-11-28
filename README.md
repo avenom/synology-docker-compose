@@ -272,13 +272,12 @@ http://synologyip:8000
 2. Создайте в Container Manager новый проект с названием rss-bridge, выберите путь /docker/rss-bridge/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
-version: '2'
 services:
   rss-bridge:
     image: rssbridge/rss-bridge:latest
     container_name: rss-bridge
     volumes:
-      - /volume1/docker/rss-bridge:/config
+      - ./:/config
     ports:
       - 3001:80
     restart: always
