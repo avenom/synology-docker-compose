@@ -474,7 +474,7 @@ https://vaultwarden.local
 
 ```
 /docker/wallabag/db/
-/docker/wallabag/images
+/docker/wallabag/images/
 ```
 
 2. Создайте в Container Manager новый проект с названием wallabag, выберите путь /docker/wallabag/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код, прописав IP-адрес вашего Synology в  SYMFONY__ENV__DOMAIN_NAME=http://synologyip:8082
