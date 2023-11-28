@@ -206,6 +206,38 @@ services:
 docker container start plextraktsync
 ```
 
+## Podgrab <a name="podgrab"></a>
+
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/podgrab/config/
+/docker/podgrab/data/
+```
+
+2. Создайте в Container Manager новый проект с названием podgrab, выберите путь /docker/podgrab/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код. В CHECK_FREQUENCY можно выставить частоту проверки наличия новых выпусков в минутах.
+
+```
+services:
+  podgrab:
+    image: akhilrex/podgrab:latest
+    container_name: podgrab
+    environment:
+      - CHECK_FREQUENCY=240
+    volumes:
+      - ./config:/config
+      - ./data:/assets
+    ports:
+      - 8083:8080
+    restart: always
+```
+
+3. Podgrab будет доступен по адресу:
+
+```
+http://synologyip:8083
+```
+
 ## RSS-Bridge <a name="rss-bridge"></a>
 
 1. Создайте в File Station следующую структуру папок:
