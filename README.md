@@ -329,14 +329,13 @@ services:
 2. Создайте в Container Manager новый проект с названием swingmusic, выберите путь /docker/swingmusic/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
-version: '2'
 services:
   swingmusic:
-    image: bitnik212/swingmusic:latest
+    image: shlomip/swingmusic:latest
     container_name: swingmusic
     volumes:
-      - ./music:/music
       - ./config:/config
+      - ./music:/music
     ports:
       - "1970:1970"
     restart: always
