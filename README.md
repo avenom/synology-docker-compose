@@ -10,6 +10,7 @@
 * [Miniflux + PostgreSQL](#miniflux)
 * [OpenSpeedTest](#openspeedtest)
 * [PlexTraktSync](#plextraktsync)
+* [Podgrab](#podgrab)
 * [RSS-Bridge](#rss-bridge)
 * [SMTP To Telegram](#smtp_to_telegram)
 * [Swing Music](#swingmusic)
