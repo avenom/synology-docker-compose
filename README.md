@@ -59,7 +59,7 @@ http://synologyip:61208
 
 Минималистичная стартовая страница для вашего сервера, чтобы держать ссылки на ваши сервисы под рукой.
 
-<img src="">
+<img src="https://raw.githubusercontent.com/avenom/synology-docker-compose/main/images/homer.jpg?token=GHSAT0AAAAAACKZL7BWYBG2QVJQ7NYUM3YAZLF7PZA">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -96,7 +96,7 @@ http://synologyip:8080
 
 Mинималистичный RSS-клиент с интеграциями с разными сервисами.
 
-<img src="">
+<img src="https://raw.githubusercontent.com/avenom/synology-docker-compose/main/images/miniflux.png?token=GHSAT0AAAAAACKZL7BX5H4OICH4HALZR3KAZLF7R2Q">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -159,7 +159,7 @@ password
 
 Инструмент для тестирования скорости интернета.
 
-<img src="">
+<img src="https://raw.githubusercontent.com/avenom/synology-docker-compose/main/images/openspeedtest.jpg?token=GHSAT0AAAAAACKZL7BXQNZL3UJS64CQBTLOZLF7VNA">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -189,7 +189,7 @@ http://synologyip:3000
 
 Двухсторонняя синхронизация между trakt.tv и Plex Media Server. Требует наличия учетной записи trakt.tv, но не требует наличия подписок Plex Pass и Trakt VIP.
 
-<img src="">
+<img src="https://raw.githubusercontent.com/avenom/synology-docker-compose/main/images/plextraktsync.jpg?token=GHSAT0AAAAAACKZL7BX2GTZMFPPWSOLILJAZLF7XVA">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -231,7 +231,7 @@ docker container start plextraktsync
 
 Менеджер/загрузчик/архиватор подкастов с интегрированным плеером, позволяющий загружать эпизоды подкастов, как только они выходят в эфир.
 
-<img src="">
+<img src="https://raw.githubusercontent.com/avenom/synology-docker-compose/main/images/podgrab.jpg?token=GHSAT0AAAAAACKZL7BWI3SOAYNXU2AC7M24ZLF72VA">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -267,7 +267,7 @@ http://synologyip:8083
 
 Генератор RSS-лент для сайтов, у которых нет RSS-подписок.
 
-<img src="">
+<img src="https://raw.githubusercontent.com/avenom/synology-docker-compose/main/images/rss-bridge.png?token=GHSAT0AAAAAACKZL7BWF2AQZ3A2KULSLGK2ZLF74DA">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -298,8 +298,6 @@ http://synologyip:3001
 ## SMTP To Telegram <a name="smtp_to_telegram"></a>
 
 Небольшая программа, которая прослушивает SMTP и отправляет все входящие сообщения электронной почты в Telegram. Если у вас есть программа, которая может отправлять уведомления по электронной почте через SMTP. Вы можете использовать smtp_to_telegram в качестве SMTP-сервера, чтобы письма с уведомлениями отправлялись в выбранные чаты Telegram.
-
-<img src="">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -365,7 +363,7 @@ http://synologyip:1970
 
 Веб-приложение для мониторинга, аналитики и уведомлений для Plex Media Server.
 
-<img src="">
+<img src="https://raw.githubusercontent.com/avenom/synology-docker-compose/main/images/tautulli.jpg?token=GHSAT0AAAAAACKZL7BXQ3ALIIPRGEGHG36CZLF77UQ">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -401,7 +399,7 @@ http://synologyip:8181
 
 Мониторинг доступности и аптайма сайтов.
 
-<img src="">
+<img src="https://raw.githubusercontent.com/avenom/synology-docker-compose/main/images/uptime-kuma.jpg?token=GHSAT0AAAAAACKZL7BXZAPIVLXHFOSB3ZCUZLGABLQ">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -433,7 +431,7 @@ http://synologyip:3002
 
 Неофициальный сервер хранилища паролей, совместимый с Bitwarden. Подходит для самостоятельного развертывания, когда запуск официального сервиса Bitwarden, требующего больших ресурсов, может быть не идеальным.
 
-<img src="">
+<img src="https://raw.githubusercontent.com/avenom/synology-docker-compose/main/images/vaultwarden.png?token=GHSAT0AAAAAACKZL7BXGTN33GBQBVNAUHMKZLGAGKQ">
 
 1. Vaultwarden работает по протоколу HTTPS, поэтому в Synology DSM нужно настроить обратный прокси. Перейдите в Панель управления > Портал для входа > Дополнительно, нажмите Обратный прокси, создайте обратный прокси со следующими данными:
 
@@ -487,7 +485,7 @@ https://vaultwarden.local
 
 Веб-приложение, позволяющее сохранять веб-страницы для последующего чтения. Кликните, сохраните и прочитайте, когда захотите. Оно извлекает содержимое, чтобы вы не отвлекались на всплывающие окна.
 
-<img src="">
+<img src="https://raw.githubusercontent.com/avenom/synology-docker-compose/main/images/wallabag.jpg?token=GHSAT0AAAAAACKZL7BXSL6E7JHIVRFO3JZKZLGAIOQ">
 
 1. Создайте в File Station следующую структуру папок:
 
