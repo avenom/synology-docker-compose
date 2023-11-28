@@ -444,7 +444,7 @@ services:
     image: vaultwarden/server:latest
     container_name: vaultwarden
     volumes:
-      - /volume1/docker/vaultwarden:/data
+      - ./:/data
     ports:
       - 3012:3012
       - 5151:80
