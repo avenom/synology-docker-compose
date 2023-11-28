@@ -360,13 +360,12 @@ http://synologyip:1970
 2. Создайте в Container Manager новый проект с названием tautulli, выберите путь /docker/tautulli/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
-version: '3'
 services:
   tautulli:
     image: tautulli/tautulli:latest
     container_name: tautulli
     volumes:
-      - /volume1/docker/tautulli/config:/config
+      - ./config:/config
     environment:
       - PUID=<uid>
       - PGID=<gid>
