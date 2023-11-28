@@ -214,7 +214,6 @@ docker container start plextraktsync
 ```
 /docker/podfetch/podcasts/
 /docker/podfetch/db/
-
 ```
 
 2. Создайте в Container Manager новый проект с названием podfetch, выберите путь /docker/podfetch/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
