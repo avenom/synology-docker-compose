@@ -180,7 +180,6 @@ http://synologyip:3000
 2. Создайте в Container Manager новый проект с названием plextraktsync, выберите путь /docker/plextraktsync/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
-version: '2'
 services:
   plextraktsync:
     image: twolaw/plextraktsync:latest
@@ -219,7 +218,6 @@ docker container start plextraktsync
 2. Создайте в Container Manager новый проект с названием podfetch, выберите путь /docker/podfetch/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
-version: '3'
 services:
   podfetch:
     image: samuel19982/podfetch:latest
@@ -392,7 +390,6 @@ http://synologyip:8181
 2. Создайте в Container Manager новый проект с названием uptime-kuma, выберите путь /docker/uptime-kuma/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
-version: '3.3'
 services:
   uptime-kuma:
     image: elestio/uptime-kuma:latest
@@ -442,7 +439,6 @@ http://synologyip:3002
 5. Создайте в Container Manager новый проект с названием vaultwarden, выберите путь /docker/vaultwarden/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
-version: '2'
 services:
   vaultwarden:
     image: vaultwarden/server:latest
@@ -474,7 +470,6 @@ https://vaultwarden.local
 
 
 ```
-version: '3'
 services:
   wallabag:
     image: wallabag/wallabag:latest
