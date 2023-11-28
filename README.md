@@ -10,7 +10,6 @@
 * [Miniflux + PostgreSQL](#miniflux)
 * [OpenSpeedTest](#openspeedtest)
 * [PlexTraktSync](#plextraktsync)
-* [Podfetch + PostgreSQL](#podfetch)
 * [RSS-Bridge](#rss-bridge)
 * [SMTP To Telegram](#smtp_to_telegram)
 * [Swing Music](#swingmusic)
@@ -206,56 +205,6 @@ services:
 Скрипт, заданный пользователем
 docker container start plextraktsync
 ```
-
-## Podfetch + PostgreSQL <a name="podfetch"></a>
-
-1. Создайте в File Station следующую структуру папок:
-
-```
-/docker/podfetch/podcasts/
-/docker/podfetch/db/
-```
-
-2. Создайте в Container Manager новый проект с названием podfetch, выберите путь /docker/podfetch/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
-
-```
-services:
-  podfetch:
-    image: samuel19982/podfetch:latest
-    container_name: podfetch
-    user: 1026:100
-    ports:
-      - "8000:8000"
-    depends_on:
-      - postgres
-    volumes:
-      - ./podcasts:/app/podcasts
-    environment:
-      - POLLING_INTERVAL=300
-      - SERVER_URL=http://192.168.1.120:8000
-      - DATABASE_URL=postgresql://postgres:changeme@postgres/podfetch
-    restart: always
-
-  postgres:
-    image: postgres:latest
-    container_name: podfetch-db
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: changeme
-      PGDATA: /data/postgres
-      POSTGRES_DB: podfetch
-    volumes:
-      - ./db:/data/postgres
-    restart: always
-```
-
-3. Podfetch будет доступен по адресу:
-
-```
-http://synologyip:8000
-```
-
-Во время автоматического обновления базы данных с вашими подписками, Podfetch может непродолжительное время нагружать ЦП и активно использовать HDD.
 
 ## RSS-Bridge <a name="rss-bridge"></a>
 
