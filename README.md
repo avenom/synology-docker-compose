@@ -65,13 +65,12 @@ http://synologyip:61208
 3. Создайте в Container Manager новый проект с названием homer, выберите путь /docker/homer/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
 
 ```
-version: '2'
 services:
   homer:
     image: b4bz/homer:latest
     container_name: homer
     volumes:
-      - /volume1/docker/homer/assets/:/www/assets
+      - ./assets/:/www/assets
     ports:
       - 8080:8080
     restart: always
