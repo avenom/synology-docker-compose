@@ -8,6 +8,7 @@
 * [Home Assistant Container](#home-assistant-container)
 * [Homer + Homer Theme v2](#homer)
 * [Memos](#memos)
+* [MeTube](#metube)
 * [Miniflux + PostgreSQL](#miniflux)
 * [OpenSpeedTest](#openspeedtest)
 * [PlexTraktSync](#plextraktsync)
@@ -124,6 +125,47 @@ services:
 ```
 http://synologyip:5230
 ```
+
+## MeTube <a name="metube"></a>
+
+Веб-интерфейс для скачивания видео и плейлистов с YouTube и десятков [других сайтов](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md).
+
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/metube.gif">
+
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/metube/downloads/
+```
+
+2. Создайте в Container Manager новый проект с названием metube, выберите путь /docker/metube/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
+
+```
+services:
+  metube:
+    image: ghcr.io/alexta69/metube
+    container_name: metube
+    ports:
+      - "8084:8081"
+    volumes:
+      - ./downloads:/downloads
+    restart: always
+```
+
+3. MeTube будет доступен по адресу:
+
+```
+http://synologyip:8084
+```
+
+
+
+
+
+
+
+
+
 
 ## Miniflux + PostgreSQL <a name="miniflux"></a>
 
