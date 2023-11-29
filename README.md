@@ -95,7 +95,7 @@ http://synologyip:8080
 
 ## Memos <a name="memos"></a>
 
-Минималистичный органайзер заметок с поддержкой картинок и тегов.
+Минималистичный органайзер заметок и списка дел с поддержкой синтаксиса Markdown, тегов, возможностью прикрепления картинок.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/memos.jpg">
 
