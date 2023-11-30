@@ -16,6 +16,7 @@
 * [RSS-Bridge](#rss-bridge)
 * [SMTP To Telegram](#smtp_to_telegram)
 * [Swing Music](#swingmusic)
+* [Tasks.md](#tasks-md)
 * [Tautulli](#tautulli)
 * [Uptime Kuma](#uptime-kuma)
 * [Vaultwarden](#vaultwarden)
@@ -96,7 +97,7 @@ http://synologyip:8080
 
 ## Memos <a name="memos"></a>
 
-Минималистичный органайзер заметок и списка дел с поддержкой синтаксиса Markdown, тегов, возможностью прикрепления картинок.
+Минималистичный органайзер заметок и задач с поддержкой синтаксиса Markdown, тегов, возможностью прикрепления картинок.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/memos.jpg">
 
@@ -157,15 +158,6 @@ services:
 ```
 http://synologyip:8084
 ```
-
-
-
-
-
-
-
-
-
 
 ## Miniflux + PostgreSQL <a name="miniflux"></a>
 
@@ -433,6 +425,44 @@ http://synologyip:1970
 ```
 
 4. Нажмите Specific directories, выберите /music, нажмите Select here.
+
+## Tasks.md <a name="tasks-md"></a>
+
+Минималистичный органайзер заметок и задач с поддержкой синтаксиса Markdown, тегов, возможностью прикрепления картинок. Все заметки хранятся в виде .md-файлов.
+
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/tasks-md.gif">
+
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/tasks-md/api-data/
+/docker/tasks-md/stylesheets-data/
+/docker/tasks-md/images/
+```
+
+2. Создайте в Container Manager новый проект с названием tasks-md, выберите путь /docker/tasks-md/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
+
+```
+services:
+  tasks-md:
+      image: baldissaramatheus/tasks.md:latest
+      container_name: tasks-md
+      environment:
+          - ENABLE_LOCAL_IMAGES=true
+      volumes:
+          - ./api-data:/api/files
+          - ./stylesheets-data:/api/static/stylesheets/
+          - ./images:/api/images/
+      ports:
+        - 3456:8080
+      restart: always
+```
+
+3. Tasks.md будет доступен по адресу:
+
+```
+http://synologyip:3456
+```
 
 ## Tautulli <a name="tautulli"></a>
 
