@@ -464,6 +464,14 @@ services:
 http://synologyip:3456
 ```
 
+Можно выбрать три цветовые темы, заменив вторую строчку в файле /docker/tasks-md/stylesheets-data/index.css
+
+```
+@import url(./color-themes/adwaita.css);
+@import url(./color-themes/catppuccin.css);
+@import url(./color-themes/nord.css);
+```
+
 ## Tautulli <a name="tautulli"></a>
 
 Веб-приложение для мониторинга, аналитики и уведомлений для Plex Media Server.
