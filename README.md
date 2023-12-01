@@ -257,7 +257,7 @@ http://synologyip:3000
 
 ## PlexTraktSync <a name="plextraktsync"></a>
 
-Двухсторонняя синхронизация между trakt.tv и Plex Media Server. Требует наличия учетной записи trakt.tv, но не требует наличия подписок Plex Pass и Trakt VIP.
+Двусторонняя синхронизация между trakt.tv и Plex Media Server. Требует наличия учетной записи trakt.tv, но не требует наличия подписок Plex Pass и Trakt VIP.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/plextraktsync.jpg">
 
@@ -299,7 +299,7 @@ docker container start plextraktsync
 
 ## Podgrab <a name="podgrab"></a>
 
-Менеджер/загрузчик/архиватор подкастов с интегрированным плеером, позволяющий загружать эпизоды подкастов, как только они выходят в эфир.
+Менеджер и загрузчик подкастов с интегрированным плеером.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/podgrab.jpg">
 
@@ -335,7 +335,7 @@ http://synologyip:8083
 
 ## RSS-Bridge <a name="rss-bridge"></a>
 
-Генератор RSS-лент для сайтов, у которых нет RSS-подписок.
+Генератор RSS-лент для сайтов и сервисов, которые не предоставляют RSS-подписки.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/rss-bridge.png">
 
@@ -395,7 +395,7 @@ services:
 
 ## Swing Music <a name="swingmusic"></a>
 
-Красиво оформленный, самостоятельно размещаемый сервер потоковой передачи музыки. Как Spotify, только с вашей музыкой.
+Сервер потоковой передачи вашей музыки в стиле Spotify.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/swingmusic.png">
 
@@ -431,7 +431,7 @@ http://synologyip:1970
 
 ## Syncthing <a name="syncthing"></a>
 
-Двухсторонняя синхронизация файлов между двумя или более устройствами, например между компьютером и сервером.
+Двусторонняя синхронизация файлов между двумя или более устройствами, например между компьютером и сервером.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/syncthing.png">
 
@@ -481,9 +481,9 @@ http://127.0.0.1:8384
 
 6. В Syncthing на компьютере создадим и добавим папку C:\files. В "ID папки" пропишите files.
 
-7. Откройте в Syncthing на компьютере "Действия" > "Показать ID" и нажмите "Скопировать". В Syncthing на сервере нажмите "Добавить удаленное устройство" и вставьте из буфера в "ID устройства".
+7. Откройте в Syncthing на компьютере "Действия" > "Показать ID" и нажмите "Скопировать". В Syncthing на сервере нажмите "Добавить удаленное устройство" и вставьте текст из буфера в "ID устройства".
 
-8. Откройте в Syncthing на сервере "Действия" > "Показать ID" и нажмите "Скопировать". В Syncthing на компьютере нажмите "Добавить удаленное устройство" и вставьте из буфера в "ID устройства".
+8. Откройте в Syncthing на сервере "Действия" > "Показать ID" и нажмите "Скопировать". В Syncthing на компьютере нажмите "Добавить удаленное устройство" и вставьте текст из буфера в "ID устройства".
 
 Убедитесть, что на обоих устройствах будет написано "Подключено"
 
@@ -533,7 +533,7 @@ services:
 http://synologyip:3456
 ```
 
-Можно выбрать три цветовые темы, заменив вторую строчку в файле /docker/tasks-md/stylesheets-data/index.css
+Можете выбрать три цветовые темы, заменив вторую строчку в файле /docker/tasks-md/stylesheets-data/index.css
 
 ```
 @import url(./color-themes/adwaita.css);
@@ -543,7 +543,7 @@ http://synologyip:3456
 
 ## Tautulli <a name="tautulli"></a>
 
-Веб-приложение для мониторинга, аналитики и уведомлений для Plex Media Server.
+Веб-приложение для мониторинга, аналитики и уведомлений для сервера Plex.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/tautulli.jpg">
 
@@ -579,7 +579,7 @@ http://synologyip:8181
 
 ## Uptime Kuma <a name="uptime-kuma"></a>
 
-Мониторинг доступности и аптайма сайтов.
+Мониторинг доступности сайтов, сервисов и портов.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/uptime-kuma.jpg">
 
