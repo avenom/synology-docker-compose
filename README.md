@@ -164,7 +164,7 @@ http://synologyip:8084
 
 ## Miniflux + PostgreSQL <a name="miniflux"></a>
 
-Mинималистичный RSS-клиент с интеграциями с разными сервисами.
+Mинималистичный RSS-агрегатор с интеграциями с разными сервисами.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/miniflux.png">
 
@@ -227,7 +227,7 @@ password
 
 ## OpenSpeedTest <a name="openspeedtest"></a>
 
-Инструмент для тестирования скорости интернета.
+Тестирование скорости и пинга интернета.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/openspeedtest.jpg">
 
