@@ -16,7 +16,7 @@
 * [RSS-Bridge](#rss-bridge)
 * [SMTP To Telegram](#smtp_to_telegram)
 * [Swing Music](#swingmusic)
-* [Syncthings](#syncthings)
+* [Syncthing](#syncthing)
 * [Tasks.md](#tasks-md)
 * [Tautulli](#tautulli)
 * [Uptime Kuma](#uptime-kuma)
