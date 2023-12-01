@@ -16,6 +16,7 @@
 * [RSS-Bridge](#rss-bridge)
 * [SMTP To Telegram](#smtp_to_telegram)
 * [Swing Music](#swingmusic)
+* [Syncthings](#syncthings)
 * [Tasks.md](#tasks-md)
 * [Tautulli](#tautulli)
 * [Uptime Kuma](#uptime-kuma)
@@ -428,6 +429,10 @@ http://synologyip:1970
 
 ## Syncthing <a name="syncthing"></a>
 
+Двухсторонняя синхронизация файлов между двумя или более устройствами, например между компьютером и сервером.
+
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/syncthing.png">
+
 1. Создайте в File Station следующую структуру папок:
 
 ```
@@ -462,7 +467,7 @@ services:
 http://synologyip:8384
 ```
 
-4. Скачайте и запустите Syncthing на компьютере, который будет доступен по адресу:
+4. [Скачайте](https://syncthing.net/downloads/) и запустите Syncthing на компьютере, который будет доступен по адресу:
 
 ```
 http://127.0.0.1:8384
