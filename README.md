@@ -787,4 +787,20 @@ services:
 http://synologyip:8082
 ```
 
-5. Для сохранения статей установите в браузере расширение [Wallabagger](https://github.com/wallabag/wallabagger).
+5. Перейдите по ссылке http://synologyip:8082/developer. Нажмите "Create a new client", в "Name of the client" введите Wallabagger и нажмите "Create a new client". Запишите Client ID и Client secret.
+
+6. Установите в браузере расширение [Wallabagger](https://github.com/wallabag/wallabagger).
+
+7. В настройках расширения введите следующие данные:
+
+```
+Использовать HTTPS: нет
+Wallabag URL: synologyip:8082
+Проверить URL
+
+Client ID: вставьте сохраненный Client ID
+Secret-код клиента: вставьте сохраненный Client secret
+Логин пользователя: ваш логин Wallabag
+Пароль пользователя: ваш пароль Wallabag
+Получить токен
+```
