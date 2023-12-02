@@ -623,13 +623,15 @@ http://synologyip:3002
 /docker/vaultwarden/
 ```
 
-2. Создайте в Container Manager новый проект с названием vaultwarden, выберите путь /docker/vaultwarden/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
+2. Создайте в Container Manager новый проект с названием vaultwarden, выберите путь /docker/vaultwarden/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код, указав в ADMIN_TOKEN пароль для доступа к админке:
 
 ```
 services:
   vaultwarden:
     image: vaultwarden/server:latest
     container_name: vaultwarden
+    environment:
+      - ADMIN_TOKEN=jDAeGLC5C5tJ7f
     volumes:
       - ./:/data
     ports:
@@ -658,7 +660,7 @@ services:
 Порт: 5151
 ```
 
-7. Vaultwarden будет доступен по адресу:
+7. Зайдите в Vaultwarden по адресу и зарегистрируйте нового пользователя:
 
 ```
 https://vaultwarden.name.keenetic.pro
@@ -688,15 +690,24 @@ https://vaultwarden.name.keenetic.pro
 Создать > WebSocket
 ```
 
-9. Vaultwarden будет доступен по адресу:
+9. Зайдите в Vaultwarden по адресу и зарегистрируйте нового пользователя:
 
 ```
 https://vaultwarden.local
 ```
 
-Настоятельно рекомендую включить в настройках Vaultwarden двухэтапную аутентификацию и использовать приложения: [Google Authenticator](https://support.google.com/accounts/answer/1066447?sjid=16437106721951447589-EU), [Microsoft Authenticator](https://www.microsoft.com/ru-ru/security/mobile-authenticator-app), [Authy](https://authy.com). На всякий случай сохраните код восстановления для Vaultwarden.
+10. Зайдите в админку Vaultwarden с паролем в ADMIN_TOKEN:
 
-10. Установите расширение [Bitwarden](https://bitwarden.com/download) для вашего браузера и подключитесь к собственному серверу https://vaultwarden.local или https://vaultwarden.name.keenetic.pro.
+```
+https://vaultwarden.name.keenetic.pro/admin
+https://vaultwarden.local/admin
+```
+
+11. о
+
+12. Установите расширение [Bitwarden](https://bitwarden.com/download) для вашего браузера и подключитесь к собственному серверу https://vaultwarden.local или https://vaultwarden.name.keenetic.pro.
+
+Настоятельно рекомендую включить в настройках Vaultwarden двухэтапную аутентификацию и использовать приложения: [Google Authenticator](https://support.google.com/accounts/answer/1066447?sjid=16437106721951447589-EU), [Microsoft Authenticator](https://www.microsoft.com/ru-ru/security/mobile-authenticator-app), [Authy](https://authy.com). На всякий случай сохраните код восстановления для Vaultwarden.
 
 ## Wallabag + MariaDB + Redis <a name="wallabag"></a>
 
