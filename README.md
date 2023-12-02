@@ -5,7 +5,7 @@
 Здесь собраны композеры отобранных проектов с непересекающимися друг с другом локальными портами. Если у вас эти порты будут заняты, то можете поменять на свободные. Например в **8080:80** локальный порт - **8080**.
 
 * [Glances](#glances)
-* [Home Assistant Container](#home-assistant-container)
+* [Home Assistant](#home-assistant)
 * [Homer + Homer Theme v2](#homer)
 * [Memos](#memos)
 * [MeTube](#metube)
@@ -58,6 +58,46 @@ services:
 ```
 http://synologyip:61208
 ```
+
+## Home Assistant <a name="home-assistant"></a>
+
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/glances.jpg">
+
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/homeassistant/config/
+/docker/homeassistant/config/custom_components/hacs
+```
+
+2. В Home Assistant Container нет дополнительных интеграций Supervisor, но можно установить сторонний репозиторий интеграций HACS. Скачайте [hacs.zip](https://github.com/hacs/integration/releases) и разархивируйте содержимое архива в /docker/homeassistant/config/custom_components/hacs/.
+
+3. Создайте в Container Manager новый проект с названием homeassistant, выберите путь /docker/homeassistant/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
+
+```
+services:
+  homeassistant:
+      image: homeassistant/home-assistant:latest
+      container_name: homeassistant
+      network_mode: host
+      environment:
+        - TZ=Europe/Moscow
+      volumes:
+        - ./config:/config
+      ports:
+        - 8123:8123
+      restart: always
+```
+
+4. Home Assistant будет доступен по адресу:
+
+```
+(http://synologyip:8123
+```
+
+5. Создайте нового пользователя. В Home Assistant перейдите в "Настройки" > "Устройства и службы", нажмите "Добавить интеграцию", найдите и выберите HACS. Отметьте все и нажмите "Подтвердить". Далее потребуется наличие аккаунта GitHub. Скопируйте код и вставьте его на https://github.com/login/device, нажмите Continue, далее Authorize hacs.
+
+6. В левой панели выберите HACS, в "Отфильтровано по принадлежности к Downloaded" нажмите "Очистить" и можете ставить интеграции. Например можно привязать к Home Assistant Яндекс Станцию, установив две интеграции: Yandex Smart Home и Yandex Station. Далее добавьте эти интеграции в "Настройки" > "Устройства и службы". 
 
 ## Homer + Homer Theme v2 <a name="homer"></a>
 
