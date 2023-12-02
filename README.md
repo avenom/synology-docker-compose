@@ -613,7 +613,7 @@ http://synologyip:3002
 
 ## Vaultwarden <a name="vaultwarden"></a>
 
-Неофициальный сервер хранилища паролей, совместимый с Bitwarden. Подходит для самостоятельного развертывания, когда запуск официального сервиса Bitwarden, требующего больших ресурсов, может быть не идеальным.
+Неофициальный сервер хранилища паролей, совместимый с Bitwarden. Подходит для самостоятельного развертывания, когда для запуска официального сервиса Bitwarden не хватает ресурсов.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/vaultwarden.png">
 
@@ -694,7 +694,9 @@ https://vaultwarden.name.keenetic.pro
 https://vaultwarden.local
 ```
 
-Настоятельно рекомендую включить в настройках Vaultwarden двухфакторную аутентификацию и использовать приложения: [Google Authenticator](https://support.google.com/accounts/answer/1066447?sjid=16437106721951447589-EU), [Microsoft Authenticator](https://www.microsoft.com/ru-ru/security/mobile-authenticator-app), [Authy](https://authy.com). На всякий случай сохраните код восстановления для Vaultwarden.
+Настоятельно рекомендую включить в настройках Vaultwarden двухэтапную аутентификацию и использовать приложения: [Google Authenticator](https://support.google.com/accounts/answer/1066447?sjid=16437106721951447589-EU), [Microsoft Authenticator](https://www.microsoft.com/ru-ru/security/mobile-authenticator-app), [Authy](https://authy.com). На всякий случай сохраните код восстановления для Vaultwarden.
+
+10. Установите расширение [Bitwarden](https://bitwarden.com/download) для вашего браузера и подключитесь к собственному серверу https://vaultwarden.local или https://vaultwarden.name.keenetic.pro.
 
 ## Wallabag + MariaDB + Redis <a name="wallabag"></a>
 
