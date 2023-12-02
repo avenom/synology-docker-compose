@@ -617,7 +617,52 @@ http://synologyip:3002
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/vaultwarden.png">
 
-1. Vaultwarden работает по протоколу HTTPS, поэтому в Synology DSM нужно настроить обратный прокси. Перейдите в Панель управления > Портал для входа > Дополнительно, нажмите Обратный прокси, создайте обратный прокси со следующими данными:
+1. Создайте в File Station следующую структуру папок:
+
+```
+/docker/vaultwarden/
+```
+
+2. Создайте в Container Manager новый проект с названием vaultwarden, выберите путь /docker/vaultwarden/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
+
+```
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    volumes:
+      - ./:/data
+    ports:
+      - 3012:3012
+      - 5151:80
+    restart: always
+```
+
+3. Vaultwarden работает по протоколу HTTPS, поэтому в Synology DSM нужно сделать некоторые настройки и воспользоваться несколькими способами получения доступа.
+
+4. Перейдите в Панель управления > Сеть > Возможности подключения, включите "Включить HTTP/2".
+
+5. Перейдите в Панель управления > Безопасность > Дополнительно, включите "Включить сжатие HTTPS".
+
+**Способ 1: Настройка KeenDNS в роутерах Keenetic**
+
+Если у вас роутер Keenetic, то вы можете использовать KeenDNS, который автоматически получает SSL-сертификат Let's Encrypt.
+
+6. В админке Keenetic перейдите в "Сетевые правила" > "Доменное имя", придумайте себе доменное имя типа name.keenetic.pro. В конце страницы нажмите "Добавить" и сделайте следующие настройки:
+
+```
+Имя: vaultwarden
+Доступ из интернета: Свободный доступ
+Устройство: Ваш NAS Synology
+Протокол: HTTP
+Порт: 5151
+```
+
+```
+https://vaultwarden.name.keenetic.pro
+```
+
+
 
 ```
 Имя обратного прокси: vaultwarden
@@ -638,26 +683,7 @@ http://synologyip:3002
 
 3. Перейдите в Панель управления > Безопасность > Дополнительно, включите "Включить сжатие HTTPS".
 
-4. Создайте в File Station следующую структуру папок:
 
-```
-/docker/vaultwarden/
-```
-
-5. Создайте в Container Manager новый проект с названием vaultwarden, выберите путь /docker/vaultwarden/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
-
-```
-services:
-  vaultwarden:
-    image: vaultwarden/server:latest
-    container_name: vaultwarden
-    volumes:
-      - ./:/data
-    ports:
-      - 3012:3012
-      - 5151:80
-    restart: always
-```
 
 6. Vaultwarden будет доступен по адресу:
 
