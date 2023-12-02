@@ -371,6 +371,22 @@ http://synologyip:3001
 
 SMTP-шлюз, который отправляет все входящие сообщения электронной почты в бота Telegram. Например можно настроить отправку уведомлений из Synology DSM в вашего телеграм-бота, прописав пользовательский SMTP-сервер 0.0.0.0 с портом 2525.
 
+1. Создайте телеграм-бота с помощью бота [@BotFather](https://t.me/BotFather). Выберите в "Меню" /newbot, придумайте имя бота типа name_bot. Сохраните токен API. Запустите вашего бота и отправьте ему любое сообщение.
+
+```
+https://api.telegram.org/name_bot(ТОКЕНAPI)/getUpdates
+```
+
+https://api.telegram.org/avenom_synology_test_bot(6623609276:AAFDb6lypwFUeJclTQrxU3gyMO2qptk_CxI)/getUpdates
+
+https://api.telegram.org/bot(6623609276:AAFDb6lypwFUeJclTQrxU3gyMO2qptk_CxI)/getUpdates
+
+
+
+6623609276:AAFDb6lypwFUeJclTQrxU3gyMO2qptk_CxI
+
+avenom_synology_test_bot
+
 1. Создайте в File Station следующую структуру папок:
 
 ```
