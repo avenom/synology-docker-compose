@@ -61,7 +61,9 @@ http://synologyip:61208
 
 ## Home Assistant <a name="home-assistant"></a>
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/glances.jpg">
+Система домашней автоматизации с открытым исходным кодом, которая ставит на первое место локальный контроль и конфиденциальность. Идеально подходит для запуска на Raspberry Pi или локальном сервере.
+
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/home-assistant.png">
 
 1. Создайте в File Station следующую структуру папок:
 
