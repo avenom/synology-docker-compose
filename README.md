@@ -381,13 +381,13 @@ https://api.telegram.org/botAPI/getMe
 
 4. Найдите и сохраните номер Chat ID, например в строке "id":НОМЕР,".
 
-1. Создайте в File Station следующую структуру папок:
+5. Создайте в File Station следующую структуру папок:
 
 ```
 /docker/smtp_to_telegram/
 ```
 
-2. Создайте в Container Manager новый проект с названием smtp_to_telegram, выберите папку /docker/smtp_to_telegram/, вставьте следующий код, замените ВАШ ТОКЕН БОТА и ВАШ CHAT ID БОТА на данные вашего бота:
+6. Создайте в Container Manager новый проект с названием smtp_to_telegram, выберите папку /docker/smtp_to_telegram/, вставьте следующий код, замените ВАШ ТОКЕН API БОТА и ВАШ CHAT ID БОТА на данные вашего бота:
 
 ```
 services:
@@ -398,7 +398,7 @@ services:
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
       - ST_SMTP_LISTEN=0.0.0.0:2525
       - ST_TELEGRAM_MESSAGE_TEMPLATE={body}
-      - ST_TELEGRAM_BOT_TOKEN=ВАШ ТОКЕН БОТА
+      - ST_TELEGRAM_BOT_TOKEN=ВАШ ТОКЕН API БОТА
       - ST_TELEGRAM_CHAT_IDS=ВАШ CHAT ID БОТА
     ports:
       - 2525:2525
