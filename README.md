@@ -664,7 +664,7 @@ services:
 https://vaultwarden.name.keenetic.pro
 ```
 
-**Вариант 2: Незащищенный HTTPS без SSL-сертификата Let's Encrypt для Synology**
+**Способ 2: Незащищенный HTTPS без SSL-сертификата Let's Encrypt для Synology**
 
 У меня не получилось получить SSL-сертификат, возможно из-за использования KeenDNS и Xpenology. Можете воспользоваться [другим](https://mariushosting.com/how-to-install-vaultwarden-on-your-synology-nas) гайдом, а тут будет способ получения локального незащищенного HTTPS.
 
@@ -686,7 +686,6 @@ https://vaultwarden.name.keenetic.pro
 
 Пользовательский заголовок
 Создать > WebSocket
-
 ```
 
 9. Vaultwarden будет доступен по адресу:
@@ -694,6 +693,8 @@ https://vaultwarden.name.keenetic.pro
 ```
 https://vaultwarden.local
 ```
+
+Настоятельно рекомендую включить в настройках Vaultwarden двухфакторную аутентификацию и использовать приложения: [Google Authenticator](https://support.google.com/accounts/answer/1066447?sjid=16437106721951447589-EU), [Microsoft Authenticator](https://www.microsoft.com/ru-ru/security/mobile-authenticator-app), [Authy](https://authy.com). На всякий случай сохраните код восстановления для Vaultwarden.
 
 ## Wallabag + MariaDB + Redis <a name="wallabag"></a>
 
