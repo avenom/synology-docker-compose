@@ -551,7 +551,7 @@ http://127.0.0.1:8384
 
 ## Tasks.md <a name="tasks-md"></a>
 
-Минималистичный органайзер заметок и задач с поддержкой синтаксиса Markdown, тегов, возможностью прикрепления картинок. Все заметки хранятся в виде .md-файлов.
+Список задач с поддержкой синтаксиса Markdown, тегов, возможностью прикрепления картинок. Все заметки хранятся в виде .md-файлов.
 
 <img src="https://github.com/avenom/synology-docker-compose/blob/main/images/tasks-md.gif">
 
@@ -748,7 +748,7 @@ https://vaultwarden.name.keenetic.pro
 https://vaultwarden.local
 ```
 
-**Способ 3: Защищенный HTTPS с SSL-сертификатом Let's Encrypt для Synology**
+**Способ 3: Защищенный HTTPS с SSL-сертификатом Let's Encrypt для Synology.**
 
 Используя этот способ вы открываете доступ к Synology DSM из интернета, поэтому желательно иметь стойкий пароль и включить двухэтапную аутентификацию.
 
