@@ -829,7 +829,7 @@ https://vaultwarden.local/admin
 https://vaultwarden.name.synology.me/admin/
 ```
 
-15. Перейдите в "General settings", снимите галочку с "Allow new signups", чтобы отключить регистрацию новых пользователей и нажмите "Save".
+15. Перейдите в "General settings", в "Domain URL" введите HTTPS-адрес Vaultwarden (пр. https://vaultwarden.name.synology.me), снимите галочку с "Allow new signups", чтобы отключить регистрацию новых пользователей и нажмите "Save".
 
 16. Установите расширение [Bitwarden](https://bitwarden.com/download) для вашего браузера и подключитесь к собственному серверу https://vaultwarden.local или https://vaultwarden.name.keenetic.pro.
 
