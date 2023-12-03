@@ -1,4 +1,5 @@
 # Docker Compose для Synology DSM 7.2
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/synology-docker-compose.jpg">
 
 В Synology DSM 7.2 пакет Docker получил свое развитие и трансформировался в новый Container Manager. Появилась поддержка проектов Docker Compose, которые позволяют одним конфигом быстрее скачивать и разворачивать все необходимые образы и контейнеры.
 
