@@ -179,7 +179,7 @@ http://synologyip:5230
 
 Веб-интерфейс для скачивания видео и плейлистов с YouTube и десятков [других сайтов](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md).
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/metube.gif">
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/metube.png">
 
 1. Создайте в File Station следующую структуру папок:
 
