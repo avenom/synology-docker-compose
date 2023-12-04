@@ -87,8 +87,6 @@ services:
         - TZ=Europe/Moscow
       volumes:
         - ./config:/config
-      ports:
-        - 8123:8123
       restart: always
 ```
 
