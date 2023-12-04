@@ -30,7 +30,7 @@
 
 Мониторинг сервера, позволяющий отслеживать различные аспекты работы системы, такие как использование процессора, памяти, дисков, сети, запущенные процессы, температуру, напряжение, скорость вращения вентиляторов, контейнеров Docker.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/glances.jpg">
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/glances.png">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -211,7 +211,7 @@ http://synologyip:8084
 
 Mинималистичный RSS-агрегатор с интеграциями с разными сервисами.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/miniflux.png">
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/miniflux.jpg">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -276,7 +276,7 @@ password
 
 Тестирование скорости и пинга интернета.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/openspeedtest.jpg">
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/openspeedtest.png">
 
 1. Создайте в File Station следующую структуру папок:
 
@@ -638,7 +638,7 @@ http://synologyip:8181
 
 Мониторинг доступности сайтов, доменов, сервисов и портов.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/uptime-kuma.jpg">
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/uptime-kuma.png">
 
 1. Создайте в File Station следующую структуру папок:
 
