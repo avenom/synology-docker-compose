@@ -211,7 +211,7 @@ http://synologyip:8084
 
 Mинималистичный RSS-агрегатор с интеграциями с разными сервисами.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/miniflux.jpg">
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/miniflux.png">
 
 1. Создайте в File Station следующую структуру папок:
 
