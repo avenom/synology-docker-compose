@@ -556,7 +556,7 @@ http://127.0.0.1:8384
 
 Список задач с поддержкой синтаксиса Markdown, тегов, возможностью прикрепления картинок. Все заметки хранятся в виде .md-файлов.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/tasks-md.gif">
+<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/tasks-md.jpg">
 
 1. Создайте в File Station следующую структуру папок:
 
