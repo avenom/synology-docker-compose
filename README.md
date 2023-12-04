@@ -51,8 +51,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - "GLANCES_OPT=-w"
-    ports:
-      - 61208:61208
     restart: always
 ```
 
