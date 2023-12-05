@@ -361,7 +361,7 @@ services:
     image: akhilrex/podgrab:latest
     container_name: podgrab
     environment:
-      - CHECK_FREQUENCY=240
+      - CHECK_FREQUENCY=60
     volumes:
       - ./config:/config
       - ./data:/assets
