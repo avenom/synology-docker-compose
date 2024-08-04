@@ -14,7 +14,6 @@
 * [MeTube](#metube)
 * [Miniflux + PostgreSQL](#miniflux)
 * [OpenSpeedTest](#openspeedtest)
-* [PlexTraktSync](#plextraktsync)
 * [Podgrab](#podgrab)
 * [RSS-Bridge](#rss-bridge)
 * [SMTP To Telegram](#smtp_to_telegram)
@@ -296,48 +295,6 @@ services:
 
 ```
 http://synologyip:3000
-```
-
-## PlexTraktSync <a name="plextraktsync"></a>
-
-Двусторонняя синхронизация между сервером Plex и Trakt без наличия подписок Plex Pass и Trakt VIP.
-
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/plextraktsync.jpg">
-
-1. Создайте в File Station следующую структуру папок:
-
-```
-/docker/plextraktsync/config/
-```
-
-2. Создайте в Container Manager новый проект с названием plextraktsync, выберите путь /docker/plextraktsync/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
-
-```
-services:
-  plextraktsync:
-    image: twolaw/plextraktsync:latest
-    container_name: plextraktsync
-    command: sync
-    volumes:
-      - ./config:/app/config
-```
-
-3. Откройте контейнер plextraktsync и нажмите "Пуск", после того, как контейнер запустится, нажмите "Действие" и "Откройте терминал". Следуйте пошаговой инструкции (возможно потребуется запустить вручную командой run). После всех этапов, начнется синхронизация между вашими библиотеками Plex и вашим аккаунтом Trakt, после чего контейнер завершит работу и остановится.
-
-4. Нет необходимости держать контейнер plextraktsync всегда включенным, после запуска он синхронизирует аккаунты, после чего останавливается. Рекомендую добавить в планировщике Synology DSM запуск по расписанию. Откройте "Панель управления" и перейдите в "Планировщик задач". Создайте запланированную задачу скрипта, заданным пользователем.
-
-```
-Общие
-Задача: plextraktsync
-Пользователь: root
-
-Расписание
-Повтор: ежедневно
-Время запуска: выберите нужное время
-
-Настройка задач
-Скрипт, заданный пользователем
-docker container start plextraktsync
 ```
 
 ## Podgrab <a name="podgrab"></a>
