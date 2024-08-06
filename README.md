@@ -568,16 +568,15 @@ http://synologyip:3456
 ```
 services:
   tautulli:
-    image: tautulli/tautulli:latest
+    image: ghcr.io/tautulli/tautulli:latest
     container_name: tautulli
+    network_mode: host
     volumes:
       - ./config:/config
     environment:
       - PUID=<uid>
       - PGID=<gid>
-      - TZ=<timezone>
-    ports:
-      - 8181:8181
+      - TZ=Europe/Moscow
     restart: always
 ```
 
