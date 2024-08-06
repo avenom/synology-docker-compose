@@ -421,7 +421,7 @@ services:
 ```
 services:
   swingmusic:
-    image: ghcr.io/swing-opensource/swingmusic:latest
+    image: ghcr.io/swingmx/swingmusic:latest
     container_name: swingmusic
     volumes:
       - ./config:/config
@@ -437,7 +437,7 @@ services:
 http://synologyip:1970
 ```
 
-4. Нажмите Specific directories, выберите /music, нажмите Select here.
+4. Нажмите Specific directories, выберите /music, нажмите Add this folder.
 
 ## Syncthing <a name="syncthing"></a>
 
