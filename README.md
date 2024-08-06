@@ -385,7 +385,9 @@ https://api.telegram.org/botAPI/getUpdates
 /docker/smtp_to_telegram/
 ```
 
-5. Создайте в Container Manager новый проект с названием smtp_to_telegram, выберите папку /docker/smtp_to_telegram/, вставьте следующий код, замените ВАШ ТОКЕН API БОТА и ВАШ CHAT ID БОТА на данные вашего бота:
+5. Создайте в Container Manager новый проект с названием smtp_to_telegram, выберите папку /docker/smtp_to_telegram/, вставьте следующий код, замените ВАШ ТОКЕН API БОТА и ВАШ CHAT ID БОТА на данные вашего бота.
+
+Вариант с портом:
 
 ```
 services:
@@ -400,6 +402,22 @@ services:
       - ST_TELEGRAM_CHAT_IDS=ВАШ CHAT ID БОТА
     ports:
       - 2525:2525
+    restart: always
+```
+
+Вариант с host:
+
+```
+services:
+  smtp_to_telegram:
+    image: kostyaesmukov/smtp_to_telegram:latest
+    container_name: smtp_to_telegram
+    network_mode: host
+    environment:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - ST_TELEGRAM_MESSAGE_TEMPLATE={body}
+      - ST_TELEGRAM_BOT_TOKEN=ВАШ ТОКЕН API БОТА
+      - ST_TELEGRAM_CHAT_IDS=ВАШ CHAT ID БОТА
     restart: always
 ```
 
