@@ -7,6 +7,26 @@
 
 Если заметите неточности, то пишите в [телеграм](https://t.me/avenom).
 
+| Проект | Порты |
+|---|---|
+|[Glances](#glances)|61208|
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
+
 * [Glances](#glances)
 * [Home Assistant](#home-assistant)
 * [Homer + Homer Theme v2](#homer)
