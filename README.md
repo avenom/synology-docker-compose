@@ -190,7 +190,7 @@ services:
     image: ghcr.io/alexta69/metube
     container_name: metube
     ports:
-      - "8084:8081"
+      - "8081:8081"
     volumes:
       - ./downloads:/downloads
     restart: always
@@ -222,7 +222,7 @@ services:
     image: miniflux/miniflux:latest
     container_name: miniflux
     ports:
-      - "8081:8080"
+      - "8085:8080"
     depends_on:
       db:
         condition: service_healthy
@@ -355,7 +355,7 @@ services:
     volumes:
       - ./:/config
     ports:
-      - 3001:80
+      - 8086:80
     restart: always
 ```
 
@@ -626,7 +626,7 @@ services:
     volumes:
     - ./data:/app/data
     ports:
-    - 3002:3001
+    - 3001:3001
     restart: always
 ```
 
