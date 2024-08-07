@@ -480,9 +480,9 @@ services:
     container_name: syncthing
     hostname: syncthing
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
+      - PUID=1026
+      - PGID=100
+      - TZ=Europe/Moscow
     volumes:
       - ./config:/config
     ports:
