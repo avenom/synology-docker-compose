@@ -594,8 +594,8 @@ services:
     volumes:
       - ./config:/config
     environment:
-      - PUID=<uid>
-      - PGID=<gid>
+      - PUID=1026
+      - PGID=100
       - TZ=Europe/Moscow
     restart: always
 ```
