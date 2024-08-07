@@ -15,7 +15,7 @@
 |[Memos](#memos)|5230|
 |[MeTube](#metube)|8081|
 |[Miniflux + PostgreSQL](#miniflux)|8085|
-|[OpenSpeedTest](#openspeedtest)|3000|
+|[OpenSpeedTest](#openspeedtest)|3002|
 |[Podgrab](#podgrab)|8083|
 |[RSS-Bridge](#rss-bridge)|8086|
 |[SMTP To Telegram](#smtp_to_telegram)|2525|
@@ -289,14 +289,14 @@ services:
     image: openspeedtest/latest:latest
     container_name: openspeedtest
     ports:
-      - 3000:3000
+      - 3002:3000
     restart: always
 ```
 
 3. OpenSpeedTest будет доступен по адресу:
 
 ```
-http://synologyip:3000
+http://synologyip:3002
 ```
 
 ## Podgrab <a name="podgrab"></a>
