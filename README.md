@@ -201,7 +201,7 @@ services:
 3. MeTube будет доступен по адресу:
 
 ```
-http://synologyip:8084
+http://synologyip:8081
 ```
 
 ## Miniflux + PostgreSQL <a name="miniflux"></a>
@@ -254,7 +254,7 @@ services:
 3. Miniflux будет доступен по адресу:
 
 ```
-http://synologyip:8081
+http://synologyip:8085
 ```
 
 Логин:
@@ -364,7 +364,7 @@ services:
 3. RSS-Bridge будет доступен по адресу:
 
 ```
-http://synologyip:3001
+http://synologyip:8086
 ```
 
 ## SMTP To Telegram <a name="smtp_to_telegram"></a>
@@ -635,7 +635,7 @@ services:
 3. Uptime Kuma будет доступен по адресу:
 
 ```
-http://synologyip:3002
+http://synologyip:3001
 ```
 
 ## Vaultwarden <a name="vaultwarden"></a>
