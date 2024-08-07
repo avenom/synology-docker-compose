@@ -7,43 +7,25 @@
 
 Если заметите неточности, то пишите в [телеграм](https://t.me/avenom).
 
-| Проект | Порты |
-|---|---|
+| Проект | Порт |
+|---|:---:|
 |[Glances](#glances)|61208|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-
-
-* [Glances](#glances)
-* [Home Assistant](#home-assistant)
-* [Homer + Homer Theme v2](#homer)
-* [Memos](#memos)
-* [MeTube](#metube)
-* [Miniflux + PostgreSQL](#miniflux)
-* [OpenSpeedTest](#openspeedtest)
-* [Podgrab](#podgrab)
-* [RSS-Bridge](#rss-bridge)
-* [SMTP To Telegram](#smtp_to_telegram)
-* [Swing Music](#swingmusic)
-* [Syncthing](#syncthing)
-* [Tasks.md](#tasks-md)
-* [Tautulli](#tautulli)
-* [Uptime Kuma](#uptime-kuma)
-* [Vaultwarden](#vaultwarden)
-* [Wallabag + MariaDB + Redis](#wallabag)
+|[Home Assistant](#home-assistant)|8123|
+|[Homer + Homer Theme v2](#homer)|8080|
+|[Memos](#memos)|5230|
+|[MeTube](#metube)|8081|
+|[Miniflux + PostgreSQL](#miniflux)|8085|
+|[OpenSpeedTest](#openspeedtest)|3000|
+|[Podgrab](#podgrab)|8083|
+|[RSS-Bridge](#rss-bridge)|8086|
+|[SMTP To Telegram](#smtp_to_telegram)|2525|
+|[Swing Music](#swingmusic)|1970|
+|[Syncthing](#syncthing)|8384, 22000, 21027|
+|[Tasks.md](#tasks-md)|3456|
+|[Tautulli](#tautulli)|8181|
+|[Uptime Kuma](#uptime-kuma)|3001|
+|[Vaultwarden](#vaultwarden)|3012, 5151|
+|[Wallabag + MariaDB + Redis](#wallabag)|8082, 3306|
 
 ## Glances <a name="glances"></a>
 
