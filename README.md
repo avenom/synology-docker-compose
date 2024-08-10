@@ -23,7 +23,6 @@
 |[SMTP To Telegram](#smtp_to_telegram)|2525|
 |[Swing Music](#swingmusic)|1970|
 |[Syncthing](#syncthing)|8384, 22000, 21027|
-|[Tasks.md](#tasks-md)|3456|
 |[Tautulli](#tautulli)|8181|
 |[Uptime Kuma](#uptime-kuma)|3001|
 |[Vaultwarden](#vaultwarden)|3012, 5151|
@@ -526,52 +525,6 @@ http://127.0.0.1:8384
 Убедитесть, что на обоих устройствах будет написано "В актуальном состоянии".
 
 Можете добавлять файлы в папки!
-
-## Tasks.md <a name="tasks-md"></a>
-
-Список задач с поддержкой синтаксиса Markdown, тегов, возможностью прикрепления картинок. Все заметки хранятся в виде .md-файлов.
-
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/tasks-md.png">
-
-1. Создайте в File Station следующую структуру папок:
-
-```
-/docker/tasks-md/api-data/
-/docker/tasks-md/stylesheets-data/
-/docker/tasks-md/images/
-```
-
-2. Создайте в Container Manager новый проект с названием tasks-md, выберите путь /docker/tasks-md/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
-
-```
-services:
-  tasks-md:
-      image: baldissaramatheus/tasks.md:latest
-      container_name: tasks-md
-      environment:
-          - ENABLE_LOCAL_IMAGES=true
-      volumes:
-          - ./api-data:/api/files
-          - ./stylesheets-data:/api/static/stylesheets/
-          - ./images:/api/images/
-      ports:
-        - 3456:8080
-      restart: always
-```
-
-3. Tasks.md будет доступен по адресу:
-
-```
-http://synologyip:3456
-```
-
-Можете выбрать три цветовые темы, заменив вторую строчку в файле /docker/tasks-md/stylesheets-data/index.css
-
-```
-@import url(./color-themes/adwaita.css);
-@import url(./color-themes/catppuccin.css);
-@import url(./color-themes/nord.css);
-```
 
 ## Tautulli <a name="tautulli"></a>
 
