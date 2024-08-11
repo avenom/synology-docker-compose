@@ -22,7 +22,6 @@
 |[RSS-Bridge](#rss-bridge)|8086|
 |[SMTP To Telegram](#smtp_to_telegram)|2525|
 |[Swing Music](#swingmusic)|1970|
-|[Syncthing](#syncthing)|8384, 22000, 21027|
 |[Tautulli](#tautulli)|8181|
 |[Uptime Kuma](#uptime-kuma)|3001|
 |[Vaultwarden](#vaultwarden)|3012, 5151|
@@ -459,72 +458,6 @@ http://synologyip:1970
 ```
 
 4. Нажмите Specific directories, выберите /music, нажмите Add this folder.
-
-## Syncthing <a name="syncthing"></a>
-
-Двусторонняя синхронизация файлов между двумя или более устройствами, например между компьютером и сервером.
-
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/syncthing.png">
-
-1. Создайте в File Station следующую структуру папок:
-
-```
-/docker/syncthing/config/
-```
-
-2. Создайте в Container Manager новый проект с названием syncthing, выберите путь /docker/syncthing/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
-
-```
-services:
-  syncthing:
-    image: lscr.io/linuxserver/syncthing:latest
-    container_name: syncthing
-    hostname: syncthing
-    environment:
-      - PUID=1026
-      - PGID=100
-      - TZ=Europe/Moscow
-    volumes:
-      - ./config:/config
-    ports:
-      - 8384:8384
-      - 22000:22000/tcp
-      - 22000:22000/udp
-      - 21027:21027/udp
-    restart: always
-```
-
-3. Syncthing на сервере будет доступен по адресу:
-
-```
-http://synologyip:8384
-```
-
-4. [Скачайте](https://syncthing.net/downloads/) и запустите Syncthing на компьютере, который будет доступен по адресу:
-
-```
-http://127.0.0.1:8384
-```
-
-Для примера создадим синхронизацию одной папки между сервером и компьютером на винде.
-
-5. В Syncthing на сервере создадим и добавим папку /config/files. В "ID папки" пропишите files.
-
-6. В Syncthing на компьютере создадим и добавим папку C:\files. В "ID папки" пропишите files.
-
-7. Откройте в Syncthing на компьютере "Действия" > "Показать ID" и нажмите "Скопировать". В Syncthing на сервере нажмите "Добавить удаленное устройство" и вставьте текст из буфера в "ID устройства".
-
-8. Откройте в Syncthing на сервере "Действия" > "Показать ID" и нажмите "Скопировать". В Syncthing на компьютере нажмите "Добавить удаленное устройство" и вставьте текст из буфера в "ID устройства".
-
-Убедитесть, что на обоих устройствах будет написано "Подключено"
-
-9. В Syncthing на компьютере отредактируйте папку files, откройте вкладку "Предоставление доступа" и выберите подключенный Syncthing на сервере.
-
-10. В Syncthing на сервере отредактируйте папку files, откройте вкладку "Предоставление доступа" и выберите подключенный Syncthing на компьютере.
-
-Убедитесть, что на обоих устройствах будет написано "В актуальном состоянии".
-
-Можете добавлять файлы в папки!
 
 ## Tautulli <a name="tautulli"></a>
 
