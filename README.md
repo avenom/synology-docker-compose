@@ -475,9 +475,10 @@ http://synologyip:8181
 ```
 services:
   uptime-kuma:
-    image: elestio/uptime-kuma:latest
+    image: louislam/uptime-kuma:latest
     container_name: uptime-kuma
     volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
     - ./data:/app/data
     ports:
     - 3001:3001
