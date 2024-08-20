@@ -22,7 +22,6 @@
 |[Podgrab](#podgrab)|8083|
 |[RSS-Bridge](#rss-bridge)|8086|
 |[SMTP To Telegram](#smtp_to_telegram)|2525|
-|[Swing Music](#swingmusic)|1970|
 |[Tautulli](#tautulli)|8181|
 |[Uptime Kuma](#uptime-kuma)|3001|
 |[Vaultwarden](#vaultwarden)|3012, 5151|
@@ -423,42 +422,6 @@ services:
       - ST_TELEGRAM_CHAT_IDS=ВАШ CHAT ID БОТА
     restart: always
 ```
-
-## Swing Music <a name="swingmusic"></a>
-
-Сервер потоковой передачи вашей музыки в стиле Spotify.
-
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/swingmusic.png">
-
-1. Создайте в File Station следующую структуру папок:
-
-```
-/docker/swingmusic/config/
-/docker/swingmusic/music/ - скопируйте в эту папку вашу музыку
-```
-
-2. Создайте в Container Manager новый проект с названием swingmusic, выберите путь /docker/swingmusic/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
-
-```
-services:
-  swingmusic:
-    image: ghcr.io/swingmx/swingmusic:latest
-    container_name: swingmusic
-    volumes:
-      - ./config:/config
-      - ./music:/music
-    ports:
-      - "1970:1970"
-    restart: always
-```
-
-3. Swing Music будет доступен по адресу:
-
-```
-http://synologyip:1970
-```
-
-4. Нажмите Specific directories, выберите /music, нажмите Add this folder.
 
 ## Tautulli <a name="tautulli"></a>
 
