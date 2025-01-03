@@ -440,7 +440,7 @@ services:
 ```
 services:
   tautulli:
-    image: ghcr.io/tautulli/tautulli:latest
+    image: tautulli/tautulli:latest
     container_name: tautulli
     network_mode: host
     volumes:
