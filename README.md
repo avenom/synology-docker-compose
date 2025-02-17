@@ -189,7 +189,7 @@ http://synologyip:5230
 ```
 services:
   metube:
-    image: ghcr.io/alexta69/metube:latest
+    image: alexta69/metube:latest
     container_name: metube
     ports:
       - 8081:8081
