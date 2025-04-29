@@ -35,4 +35,4 @@ http://synologyip:8080
 
 Ссылки добавляются вручную путем редактирования файла /docker/homer/assets/config.yml
 
-Дополнительно можете скачать [иконки](https://github.com/avenom/synology-docker-compose/tree/main/homer/assets/tools) для всех сервисов в этом репозитории или скачать [икон-пак](https://github.com/NX211/homer-icons), которые нужно положить в папку /docker/homer/assets/tools.
+Дополнительно можете скачать мою коллекцию [иконок и логотипов](https://github.com/avenom/synology-docker-compose/tree/main/icons) или скачать [икон-пак](https://github.com/NX211/homer-icons), которые нужно положить в папку /docker/homer/assets/tools.
