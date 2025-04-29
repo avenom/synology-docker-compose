@@ -61,4 +61,4 @@ admin
 password
 ```
 
-Рекомендую использовать совместно с [RSS-Bridge](#rss-bridge).
+Рекомендую использовать совместно с [RSS-Bridge](https://github.com/avenom/synology-docker-compose/blob/main/rss-bridge.md).
