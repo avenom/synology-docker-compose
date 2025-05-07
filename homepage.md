@@ -43,4 +43,4 @@ http://synologyip:3535
 
 Ссылки добавляются вручную путем редактирования файла /docker/homepage/config/services.yaml
 
-Дополнительно можете скачать мою коллекцию [иконок и логотипов](https://github.com/avenom/synology-docker-compose/tree/main/icons) или скачать [икон-пак](https://github.com/NX211/homer-icons), которые нужно положить в папку /docker/homepage/public/tools.
+Дополнительно можете скачать мою коллекцию [иконок и логотипов](https://github.com/avenom/synology-docker-compose/tree/main/icons) или скачать [икон-пак](https://github.com/NX211/homer-icons), которые нужно положить в папку /docker/homepage/public/icons.
