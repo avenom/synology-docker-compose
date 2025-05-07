@@ -12,7 +12,7 @@
 
 | Проект | Порт |
 |---|:---:|
-|[Audiobookshelf](https://github.com/avenom/synology-docker-compose/blob/main/audiobookshelf.md))|13378|
+|[Audiobookshelf](https://github.com/avenom/synology-docker-compose/blob/main/audiobookshelf.md)|13378|
 |[Glances](https://github.com/avenom/synology-docker-compose/blob/main/glances.md)|61208|
 |[Home Assistant](https://github.com/avenom/synology-docker-compose/blob/main/homeassistant.md)|8123|
 |[Homer + Homer Theme v2](https://github.com/avenom/synology-docker-compose/blob/main/homer.md)|8080|
