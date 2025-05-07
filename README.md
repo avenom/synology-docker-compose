@@ -15,7 +15,7 @@
 |[Audiobookshelf](https://github.com/avenom/synology-docker-compose/blob/main/audiobookshelf.md)|13378|
 |[Glances](https://github.com/avenom/synology-docker-compose/blob/main/glances.md)|61208|
 |[Home Assistant](https://github.com/avenom/synology-docker-compose/blob/main/homeassistant.md)|8123|
-|[Homer + Homer Theme v2](https://github.com/avenom/synology-docker-compose/blob/main/homer.md)|8080|
+|[Homepage](https://github.com/avenom/synology-docker-compose/blob/main/homepage.md)|3535|
 |[Memos](https://github.com/avenom/synology-docker-compose/blob/main/memos.md)|5230|
 |[MeTube](https://github.com/avenom/synology-docker-compose/blob/main/metube.md)|8081|
 |[Miniflux + PostgreSQL](https://github.com/avenom/synology-docker-compose/blob/main/miniflux.md)|8085|
