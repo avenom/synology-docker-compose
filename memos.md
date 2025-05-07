@@ -1,8 +1,8 @@
 # Memos
 
-Минималистичный органайзер заметок и задач с поддержкой синтаксиса Markdown, тегов, возможностью прикрепления картинок.
+[Memos](https://github.com/usememos/memos) — это минималистичный органайзер заметок с поддержкой синтаксиса Markdown, тегов, возможностью прикрепления картинок.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/memos.jpg">
+---
 
 1. Создайте в File Station следующую структуру папок:
 
