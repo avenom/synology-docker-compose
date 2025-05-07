@@ -1,8 +1,8 @@
 # MeTube
 
-Веб-интерфейс для скачивания видео и плейлистов с YouTube и десятков [других сайтов](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md).
+[MeTube](https://github.com/alexta69/metube) — это веб-интерфейс для скачивания видео, аудио и плейлистов с YouTube и десятков [других сайтов](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md).
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/metube.png">
+---
 
 1. Создайте в File Station следующую структуру папок:
 
