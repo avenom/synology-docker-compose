@@ -11,7 +11,6 @@
 /docker/audiobookshelf/audiobooks/
 /docker/audiobookshelf/podcasts/
 /docker/audiobookshelf/metadata/
-
 ```
 
 2. Создайте в Container Manager новый проект с названием audiobookshelf, выберите путь /docker/audiobookshelf/, выберите в источнике "Создать docker-compose.yml", вставьте в окно ниже следующий код:
