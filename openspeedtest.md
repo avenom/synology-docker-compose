@@ -1,8 +1,8 @@
 # OpenSpeedTest
 
-Тестирование скорости и пинга интернета.
+[OpenSpeedTest](https://github.com/openspeedtest/Speed-Test) — это программа для тестирования скорости интернета, работающее на HTML5 без использования Flash или Java, позволяющее измерять стабильную скорость загрузки и выгрузки через любой современный веб-браузер.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/openspeedtest.png">
+---
 
 1. Создайте в File Station следующую структуру папок:
 
