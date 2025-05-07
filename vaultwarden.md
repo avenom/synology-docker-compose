@@ -1,8 +1,8 @@
 # Vaultwarden
 
-Неофициальный сервер хранилища паролей, совместимый с Bitwarden. Подходит для самостоятельного развертывания, когда для запуска официального сервиса Bitwarden не хватает ресурсов.
+[Vaultwarden](https://github.com/dani-garcia/vaultwarden) — это сервер хранилища паролей, совместимый с Bitwarden, предназначенный для безопасного хранения и управления паролями с минимальными требованиями к ресурсам.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/vaultwarden.png">
+---
 
 1. Создайте в File Station следующую структуру папок:
 
