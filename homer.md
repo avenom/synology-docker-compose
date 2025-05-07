@@ -1,8 +1,8 @@
 # Homer + Homer Theme v2
 
-Стартовая страница с вашими ссылками.
+[Homer](https://github.com/bastienwirtz/homer) — это ваша стартовая страница с вашими ссылками.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/homer.jpg">
+---
 
 1. Создайте в File Station следующую структуру папок:
 
