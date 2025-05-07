@@ -2,7 +2,7 @@
 
 Менеджер и загрузчик подкастов с интегрированным плеером.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/podgrab.jpg">
+---
 
 1. Создайте в File Station следующую структуру папок:
 
