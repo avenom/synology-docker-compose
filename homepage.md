@@ -1,6 +1,6 @@
 # Homepage
 
-Homepage — это ваша стартовая страница с вашими ссылками.
+[Homepage](https://github.com/gethomepage/homepage) — это ваша стартовая страница с вашими ссылками.
 
 ---
 
