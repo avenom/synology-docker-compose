@@ -1,8 +1,8 @@
 # Tautulli
 
-Веб-приложение для мониторинга, аналитики и уведомлений для сервера Plex.
+[Tautulli](https://github.com/Tautulli/Tautulli) — это веб-приложение для мониторинга, аналитики и уведомлений Plex Media Server, предоставляющее подробную статистику о просмотрах, активности пользователей и недавно добавленном контенте. 
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/tautulli.jpg">
+---
 
 1. Создайте в File Station следующую структуру папок:
 
