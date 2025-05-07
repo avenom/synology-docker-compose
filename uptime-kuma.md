@@ -1,8 +1,8 @@
 # Uptime Kuma
 
-Мониторинг доступности сайтов, доменов, сервисов и портов.
+[Uptime Kuma](https://github.com/louislam/uptime-kuma) — это программа для мониторинга, которая позволяет самостоятельно отслеживать доступность веб-сайтов, приложений и серверов с помощью настраиваемых панелей и уведомлений.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/uptime-kuma.png">
+---
 
 1. Создайте в File Station следующую структуру папок:
 
