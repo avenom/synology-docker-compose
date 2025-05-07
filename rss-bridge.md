@@ -1,8 +1,8 @@
 # RSS-Bridge
 
-Генератор RSS-лент для сайтов и сервисов, которые не предоставляют RSS-подписки.
+[RSS-Bridge](https://github.com/RSS-Bridge/rss-bridge) — это веб-генератор RSS-каналов для сайтов, не предоставляющих их, позволяя собирать контент с различных онлайн-ресурсов и читать его в удобном формате.
 
-<img src="https://github.com/avenom/synology-docker-compose/blob/main/images/rss-bridge.png">
+---
 
 1. Создайте в File Station следующую структуру папок:
 
