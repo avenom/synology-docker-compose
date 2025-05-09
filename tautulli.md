@@ -27,6 +27,8 @@ services:
     restart: always
 ```
 
+* [Как узнать ваш PUID и PGID в Synology DSM](https://github.com/avenom/synology-docker-compose#puid)
+
 3. Tautulli будет доступен по адресу:
 
 ```
