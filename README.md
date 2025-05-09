@@ -21,6 +21,7 @@
 |[MeTube](https://github.com/avenom/synology-docker-compose/blob/main/metube.md)|8081|
 |[Miniflux + PostgreSQL](https://github.com/avenom/synology-docker-compose/blob/main/miniflux.md)|8085|
 |[OpenSpeedTest](https://github.com/avenom/synology-docker-compose/blob/main/openspeedtest.md)|3000|
+|[qBittorrent](https://github.com/avenom/synology-docker-compose/blob/main/qbittorrent.md)|9865|
 |[RSS-Bridge](https://github.com/avenom/synology-docker-compose/blob/main/rss-bridge.md)|8086|
 |[SMTP To Telegram](https://github.com/avenom/synology-docker-compose/blob/main/smtp_to_telegram.md)|2525|
 |[Tautulli](https://github.com/avenom/synology-docker-compose/blob/main/tautulli.md)|8181|
