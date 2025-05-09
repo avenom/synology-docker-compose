@@ -24,6 +24,7 @@
 |[qBittorrent](https://github.com/avenom/synology-docker-compose/blob/main/qbittorrent.md)|9865|
 |[Reubah](https://github.com/avenom/synology-docker-compose/blob/main/reubah.md)|8052|
 |[RSS-Bridge](https://github.com/avenom/synology-docker-compose/blob/main/rss-bridge.md)|8086|
+|[SearXNG](https://github.com/avenom/synology-docker-compose/blob/main/searxng.md)|5147|
 |[SMTP To Telegram](https://github.com/avenom/synology-docker-compose/blob/main/smtp_to_telegram.md)|2525|
 |[Tautulli](https://github.com/avenom/synology-docker-compose/blob/main/tautulli.md)|8181|
 |[Uptime Kuma](https://github.com/avenom/synology-docker-compose/blob/main/uptime-kuma.md)|3001|
