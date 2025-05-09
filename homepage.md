@@ -1,6 +1,6 @@
 # Homepage
 
-[Homepage](https://github.com/gethomepage/homepage) — это ваша стартовая страница с вашими ссылками.
+[Homepage](https://github.com/gethomepage/homepage) — это современная, полностью статическая, быстрая и безопасная настраиваемая стартовая страница или дашборд приложений с интеграцией более 100 сервисов и поддержкой Docker и API.
 
 ---
 
