@@ -30,6 +30,7 @@
 |[Uptime Kuma](https://github.com/avenom/synology-docker-compose/blob/main/uptime-kuma.md)|3001|
 |[Vaultwarden](https://github.com/avenom/synology-docker-compose/blob/main/vaultwarden.md)|3012, 5151|
 |[Wallabag + MariaDB + Redis](https://github.com/avenom/synology-docker-compose/blob/main/wallabag.md)|8082, 3306|
+|[What's Up Docker](https://github.com/avenom/synology-docker-compose/blob/main/whatsupdocker.md)|3333|
 
 ## Как узнать ваш PUID и PGID в Synology DSM <a name="puid"></a>
 
