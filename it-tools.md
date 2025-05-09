@@ -1,6 +1,6 @@
 # IT-Tools
 
-[IT-Tools](https://github.com/CorentinTh/it-tools) — это Коллекция удобных онлайн-инструментов для разработчиков и людей, работающих в сфере IT.
+[IT-Tools](https://github.com/CorentinTh/it-tools) — это коллекция удобных онлайн-инструментов для разработчиков и людей, работающих в сфере IT.
 
 ---
 
